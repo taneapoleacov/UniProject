@@ -1,0 +1,66 @@
+.tabset_tabs
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+	z-index: 2;
+	white-space: nowrap;
+	clear: both;
+}
+
+.tabset_tabs li
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.tabset_tabs .tabrow_content
+{
+	text-decoration: none;
+	cursor: pointer;
+	overflow: hidden;
+	text-align: center;
+	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
+	float: left;
+	background: transparent url(.) no-repeat scroll top left;
+	width: 140px;
+	height: 21px;
+}
+.tabset_tabs .tabrow_content: hover
+{
+}
+.tabset_tabs .tabrow_content.active
+{
+	font-weight: bold;
+}
+
+.tabset_content
+{
+    border: 0px solid white;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 0em 0em;
+    display: none
+}
+.tabset_label
+{
+    display: none
+}
+
+.tabset_content_active
+{
+    display: block
+}
+
+@media aural
+{
+	.tabset_content,
+	.tabset_label
+	{
+		display: block
+	}
+}

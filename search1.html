@@ -1,0 +1,231 @@
+<HTML><HEAD>
+<meta http-equiv='Content-Type' content='text/html;charset=windows-1256' >
+<link rel='stylesheet' type='text/css' href='sty2.css'>
+<link rel='stylesheet' type='text/css' href='sty3.css'>
+
+<STYLE TYPE='text/css'>.leftnavcol {  padding-left: 0.5em;  font-weight: bold;  color: #647b8e;  width: 141px;  margin-left: 0px;  padding-right: 0px;  border-right-width: 0px; }
+</STYLE>
+<TITLE>Search</TITLE>
+
+ </HEAD>
+ <BODY class='webview' onLoad='setFocus(); setTimeout("page_timeout_now();", 3600 * 1000);' >
+<TABLE CLASS='pagelayout' width='100%'>
+ <TR><TD CLASS='leftnavcol'>
+
+
+
+
+
+<DIV CLASS='site_logo'>
+
+<A HREF='/o'><IMG SRC="utm.jpg" style="width:90px; height:40px; ALT="site_logo" TITLE='UTM Library Catalog'></A>
+
+</DIV>
+
+
+
+<table class="menu_table" cellspacing="0">
+    <tr>
+     <td class='menu_top'>
+<table border="0" cellpadding="0" cellspacing="0" width="141">
+
+<TR><td class='menu_button b-search'><span>Search</span></td></tr><tr><td class='navbar'><span class='leftnavbar'><a href='search.html' TITLE='Search for titles using the title and/or author'>Title/Name</a></span></td></tr><tr><td class='navbar'><span class='leftnavbar'><a href='search2.html' TITLE='Keyword'>Keyword</a></span></td></tr><tr><td class='navbar'><span class='leftnavbar'><a href='search3.html' TITLE='Author'>Author</a></span></td></tr><tr><td class='navbar'><span class='leftnavbar'><a href='search4.html' TITLE='Subject'>Subject</a></span></td></tr><TR><TD>&nbsp;</TD></TR><TR><td class='menu_button b-links'>Links</td></tr><tr><td class='navbar'><span class='leftnavbar'><a href="menuu.html" TARGET='_top' TITLE='LAU Libraries'>UTM Library</a></span></td></tr><tr><td class='navbar'><span class='leftnavbar'><a href='http://www.lau.edu.lb/libraries/library-services/reserve' TARGET='_top' TITLE='e-Reserve'>e-Reserve</a></span></td></tr>
+</TR><TR><TD>&nbsp;</TD></TR><TR><td class='menu_button myaccount'>My Account</td></tr><tr><td class='navbar'><span class='leftnavbar'><a href='login.html' TITLE='Log in and display account details'>Sign In</a></span></td>
+
+
+
+</TR>
+</table>
+</td>
+</tr>
+</table>
+
+</TD><TD class='workpage'><!-- WorkPage -->
+
+
+
+
+<table class="mainpagetable">
+<tr><td valign="top" class="rightbodycol">
+
+<FORM METHOD='GET' ACTION='/' NAME='DockableSearchField' ID='DockableSearchField'>
+<table class="mainheadingtable">
+<TR class="mainheading">
+<TD WIDTH="45%" ALIGN="LEFT">
+<span class='location'>Title and Name Search</span>
+</TD>
+
+<TD class='top-search'>&nbsp;</TD>
+
+
+
+
+
+
+
+<TD id="headerlinks">
+
+<A id='shoppinglink'  TITLE=''><span id='shoppinglinktext'>&nbsp</span><IMG ID='basketicon' class='imgoffleft' SRC='/ BORDER='0' ALT='Basket'></A><A  id='helplink' TARGET='helpframe'></A>
+</TD>
+</TR>
+</table>
+
+<div class="location">
+<span>Title and Name Search</span>
+</div>
+
+
+</form>
+
+
+<br>
+
+
+
+<p class="brief-note">
+
+Use this search to find items where you know the title or author.<br><br>
+
+</p>
+
+<FORM METHOD='GET' ACTION='/ol' NAME='SearchForm' ID='SearchForm'>
+<INPUT TYPE='hidden' NAME='fi_kopt1' value='gotit'>
+<INPUT TYPE='hidden' NAME='fi_kopt2' value='gotit'>
+<INPUT TYPE='hidden' NAME='fi_kopt3' value='gotit'>
+
+
+
+
+
+<div class="boxborder">
+    <div class="box">
+
+<TABLE BORDER="0" WIDTH="100%">
+
+
+<TR>
+ <TD ALIGN='RIGHT'><span class='formfieldz'>Start of title</span></TD>
+ <TD><INPUT CLASS='olib_kws2_entry' NAME='sf_entry' TYPE='text' SIZE='50' VALUE=""></TD>
+</TR>
+
+<tr></tr>
+<TR STYLE="display: none;"><TD>
+
+<INPUT TYPE='hidden' NAME='session' VALUE='59645948' >
+         <INPUT TYPE='hidden' NAME='rs' VALUE='' >
+         <INPUT TYPE='hidden' NAME='style' VALUE='tiau' >
+         <INPUT TYPE='hidden' NAME='infile' VALUE='presearch.glue' >
+        <INPUT TYPE='hidden' NAME='searcher' VALUE='tiau.glue'>
+
+</TD></TR>
+
+
+
+
+<TR>
+ <td align='right'><span class='formfieldz'>Start of subtitle</span></td>
+ <TD><INPUT CLASS='olib_tiau_subentry' NAME='sf_subentry' TYPE='text' SIZE='50' VALUE="" ></TD>
+</TR>
+
+<TR>
+ <td align='right'><span class='formfieldz'>Number of hits per result page</span></td>
+<TD><SELECT CLASS='olib_tiau_nh' NAME='nh'>
+	<OPTION>5
+	<OPTION>10
+	<OPTION SELECTED>20
+	<OPTION>40
+	<OPTION>80
+	<OPTION>100
+	<OPTION>200
+	<OPTION>500
+     </SELECT>
+</TD>
+</TR>
+
+<TR><TD colspan='2' align='center'>
+
+
+<IMG style='display:none;' SRC='books.png' alt=''>
+
+
+  <input type="submit" value="Search" class="formbutton1"
+   ALT=' Search now ' TITLE=' Search now '
+       onClick='return(go_searchform_click( this ));'>
+
+</TD>
+</TR>
+
+<TR><TD COLSPAN='2'>
+
+<div align="center">
+
+<P>You may limit your search by selecting from the options below.</P>
+
+<table width="80%" border="0">
+<tr>
+<td class="box" align="center">
+
+<TABLE WIDTH="100%" BORDER="0">
+
+<TR><td align='right' valign='top'><span class='formfieldztwo'>Date before:</span></td><TD align='left'><INPUT TYPE='text' NAME='beforedate' VALUE=''>&nbsp;<span class='dateformat'>YYYY</span></TD></TR><TR><td align='right' valign='top'><span class='formfieldztwo'>Date after:</span></td><TD align='left'><INPUT TYPE='text' NAME='afterdate' VALUE=''>&nbsp;<span class='dateformat'>YYYY</span></TD></TR><TR><td align='right' valign='top'><span class='formfieldztwo'>Location:</span></td><TD align='left'><SELECT MULTIPLE  Size ='2' Name='mtp' ><OPTION VALUE='' ID='mtp' minlevel='0'>No restriction<OPTION VALUE='2' ID='loc_2' MINLEVEL='0'> UTM Library
+
+</SELECT></TD></TR><TR><td align='right' valign='top'><span class='formfieldztwo'>Media type:</span></td><TD align='left'><SELECT MULTIPLE SIZE='6' NAME='mtp' WIDTH='40'><OPTION VALUE='' ID='mtp' MINLEVEL='0'>No restriction
+<OPTION VALUE='BKM' ID='mtp_BKM' MINLEVEL='0'> Book
+<OPTION VALUE='CART' ID='mtp_CART' MINLEVEL='0'> Map
+<OPTION VALUE='SER' ID='mtp_SER' MINLEVEL='0'> Periodical or Newspaper
+<OPTION VALUE='GRAPH' ID='mtp_GRAPH' MINLEVEL='0'> Photograph, Print, Drawing
+<OPTION VALUE='RAREB' ID='mtp_RAREB' MINLEVEL='0'> Rare Book or Manuscript
+<OPTION VALUE='CMPTR' ID='mtp_CMPTR' MINLEVEL='0'> Software or E-Resource
+</SELECT></TD></TR><TR><td align='right' valign='top'><span class='formfieldztwo'>Restrict to items of media sub-type:</span></td><TD align='left'><SELECT MULTIPLE SIZE='6' NAME='med' WIDTH='40'><OPTION VALUE='' ID='med' MINLEVEL='0'>No restriction<OPTION VALUE='ATLAS' ID='med_ATLAS' MINLEVEL='0'> Atlas
+
+<OPTION VALUE='MAP' ID='med_MAP' MINLEVEL='0'> Cartographic Material
+<OPTION VALUE='DATAB' ID='med_DATAB' MINLEVEL='0'> Database
+<OPTION VALUE='ELECT' ID='med_ELECT' MINLEVEL='0'> Electronic Resource
+<OPTION VALUE='JPUB' ID='med_JPUB' MINLEVEL='0'> Journal
+<OPTION VALUE='LANGM' ID='med_LANGM' MINLEVEL='0'> Language Material
+<OPTION VALUE='NEWSP' ID='med_NEWSP' MINLEVEL='0'> Newspaper
+<OPTION VALUE='POSTE' ID='med_POSTE' MINLEVEL='0'> Poster
+
+</SELECT></TD></TR>
+
+</TABLE>
+</td></tr></table>
+</div>
+
+</TD></TR><TR><TD colspan='2' align='center'>
+  <input type="submit" value="Search" class="formbutton1"
+   ALT=' Search now ' TITLE=' Search now '
+       onClick='return(go_searchform_click( this ));'>
+</TD></TR>
+
+</TABLE>
+
+
+
+	</div>
+</div>
+
+
+
+
+</FORM>
+
+
+</td></tr>
+<tr>
+	<td class="footer-con">
+
+	    <span id="debug_info" class="debug_info" style="display:none; white-space: pre-wrap;">
+
+	    </span>
+
+
+	</td>
+</tr>
+</table>
+
+
+</TD></TR></TABLE>
+
+</BODY>
+</HTML>
