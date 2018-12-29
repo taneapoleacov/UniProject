@@ -5,19 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1 , user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<title>TUM Library</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="sty11.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <style type="text/css" >
-    .hswrapper{
-        background-image: url("books.jpg");
-    }
-    </style>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="sty11.css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
+<div class="bgded overlay" style="background-image:url('photo-1.jpg');">
 <!-- HEADER -->
+<div class="wrapper row0">
 <header id="header" class="hoc clear">
   <img id="logo" src="DIFFERENT.png" style="height:50px;">
         <div class="fl_right">
@@ -27,12 +26,13 @@
           </ul>
         </div>
 </header>
-<div>
+</div>
+
+<div class="wrapper row1">
 	<nav class="navbar navbar-default">
-		<div class="container">
+		<div class="container" style="height:50px">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topmenu" aria-expanded="false">
-					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -83,99 +83,68 @@
   <li class="dropdown">
 	  <a href="login.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">My Account</a>
 
-<div class="box">
 
-
-
-  </li>
-</ul>			</div>
 		</div>
 	</nav>
 
 </div>
 
 
+<div id="pageintro" class="hoc clear">
 <section>
+  <div class="sectiontitle">
+    <h6 class="heading font-x">THE PLACE WHERE ALL BOOKS COME TOGETHER</h6>
+    <br>
+    <p>Search for usefull soure of your development</p>
+  </div>
+  <div>
+  <form class="example" style="margin:auto;max-width:600px">
+  <input type="text" placeholder="  Search after the title,author,genre .." name="search2"><p><p>
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+  </section>
+</div>
+</div>
+</div>
+<!-- End Top Background Image Wrapper -->
 
-   <img src="photo-1.jpg" style="width:100%;height:8">
-	</div>
-	<div class="actionbar" id="actionbar">
-		<div class="container">
-           <ul>
-			<li>
-            <a >
-					<span class="actionbaricon chat"> <i class="fa fa-comments fa-right fa-border fa-3x" style="color:#003333"aria-hidden="true"></i></span>
-					<h2>Chat with a Librarian</h2>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 
-				</a>
-			</li>
-			<li>
-				<a >
-					<span class="actionbaricon newlib"><i class="fa fa-question fa-right fa-border fa-3x"style="color:#003333" aria-hidden="true"></i></span>
-					<h2>For New Students</h2>
+<div class="wrapper row3">
+  <main class="hoc box clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading font-x3">Molestie nec dignissim ac hendrerit</h6>
+      <p>Quis purus nulla facilisi aliquam non ligula nam ut nisi.</p>
+    </div>
+    <div class="posts">
+      <figure class="group">
+        <div><a class="imgover" href="#"><img src="header.jpg" alt=""></a></div>
+        <figcaption>
+          <h6 class="heading">Praesent auctor justo</h6>
+          <p>Et pulvinar pellentesque lectus urna luctus lorem a laoreet enim ligula vitae turpis curabitur ullamcorper arcu lobortis tempus ornare arcu elit dapibus ante at.</p>
+          <footer><a class="btn" href="#">View Details</a></footer>
+        </figcaption>
+      </figure>
+      <!-- ################################################################################################ -->
+      <figure class="group">
+        <div><a class="imgover" href="#"><img src="photo.jpg" alt=""></a></div>
+        <figcaption>
+          <h6 class="heading">Pharetra libero nisi</h6>
+          <p>Vel diam maecenas mattis massa nec rutrum mattis leo felis posuere eros eget elementum tortor leo non enim praesent id metus in auctor enim a tortor nunc laoreet.</p>
+          <footer><a class="btn" href="#">View Details</a></footer>
+        </figcaption>
+      </figure>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
 
-				</a>
-			</li>
-			<li>
-            <a href="/faculty/">
-					<span class="actionbaricon forf"><i class="fa fa-university fa-right fa-border fa-3x"style="color:#003333" aria-hidden="true"></i></span>
-					<h2>For Faculty</h2>
-				</a>
-			</li>
-			<li>
-				<a>
-					<span class="actionbaricon flfb"><i class="fa fa-file-o fa-right fa-border fa-3x "style="color:#003333"aria-hidden="true"></i></span>
-					<h2>Find Research Guides</h2>
-				</a>
-			</li>
-        </ul>
-		</div>
-	</div>
-</section>
-
-<article>
-	<style>
-	.box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);}
-  </style>
-	<div class="box">
-
-		<form>
-			<input type="text" name="" placeholder="What you are looking for?">
-		<input  type="submit" name="" value="Search" >
-		</div>
-</article>
-<section>
-
-	<div class="container">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 homeleftbox">
-        <a ><img src="books.jpg" alt="Homepage ad" /></a>		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 homerightbox">
-            <div class="SumoSelect">
-
-    <h2>Quick Links</h2><ul><li><a href="http://library.utm.md/Editat/BIBLIOTECA/Prezentari/Stand_internat_Cult_Inf.pdf"> International Standards of Information  </a></li><li><a href="http://library.utm.md/Editat/BIBLIOTECA/Prezentari/Referinte_bibliogr.pdf">Rules for  presentation of bibliographic references</a></li><li><a href="http://library.utm.md/Editat/BIBLIOTECA/Prezentari/Citarea_resurs_inform.pdf"> Quoting information resources</a></li><li><a href="http://library.utm.md/Editat/BIBLIOTECA/Prezentari/Particularitati_de_cautare_BD_online.pdf"> Search features in scientific databases</a></li><li><a href="http://library.utm.md/Editat/BIBLIOTECA/Prezentari/Particularitati_de_cautare_BD_online.pdf" >ExLibris Primo - search and supply system</a></li>
-
- <li><a>Contact us</a></li></ul>
-      </div>
-<section> <div class="ba"><blockquote>So many books, so little time </blockquote>
-<cite>Frank Zappa</cite></div></section>
-<section>
-
-<div class="ohwrapper">
-            <a class="allohlinks">
-					<h3></h3>
-				</a>
-				<h1 class="header">NEWS</h1>
-                <div class="openinghours"><div class="place">International Week a
-Access Open 2018</div><div class="hours">October 22-28, 2018  </div></div><div class="openinghours"><div class="place">Thematic publications exhibitions by BTS UTM</div><div class="hours">October,2018</div></div><div class="openinghours"><div class="place">Purchase New Books for Light Industry </div><div class="hours">October,2018</div></div>
-			</div>
-		</div>
-	</div>
-
- </section>
+<!-- ################################################################################################ -->
 
 
 
