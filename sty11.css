@@ -72,7 +72,7 @@
 
 @media screen and (max-width:750px){
 	#pageintro article{max-width:none;}
-	#pageintro .heading{font-size:2rem;}
+	#pageintro .heading{font-size:4rem;}
   #header{font-size: 0.7rem;}
 	.sectiontitle{max-width:none; margin-bottom:50px; text-align:center;}
 	.posts figure{max-width:570px;}/* Same width as the image */
@@ -155,7 +155,7 @@ form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
     float: left;
-    width: 90%;
+    width: 92%;
     background: #f1f1f1;
 		border: none;
 		border-radius: 10px 0 0 10px ;
@@ -164,7 +164,7 @@ form.example input[type=text] {
 
 form.example button {
     float: left;
-    width:10%;
+    width:8%;
     padding: 8px;
     background: #35B8E7;
     color: white;
@@ -3205,7 +3205,7 @@ filter: alpha(opacity=50);
 	    display: block;
 	    background-color: transparent;
 	    border: 0;
-	    margin: 10px 10px 10px 0;
+	    margin: 10px 10px 10px 10px;
 	    padding-left:0;
 	}
 	.navbar-collapse{

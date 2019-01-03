@@ -8,9 +8,10 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="sty11.css" media="all">
+  <link rel="stylesheet" type="text/css" href="faq.css" media="all">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <script src="faq.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
 <ul class="nav navbar-nav navbar-right">
 
   <li class="dropdown active"><a href="/">Home</a></li>
-  <li class="dropdown"><a href="search1.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">Research</a>
+  <li class="dropdown"><a href="search.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">Research</a>
     <ul><li><a target="_blank" href="search.html">Paper Books</a></li>
         <li><a href="search.html">E-journals/E-books</a></li>
         <li><a >UTM repository</a></li>
@@ -103,22 +104,6 @@
 	</nav>
 
 </div>
-
-
-<div id="pageintro" class="hoc clear">
-<section>
-  <div class="sectiontitle">
-    <h6 class="heading font-x">THE PLACE WHERE ALL BOOKS COME TOGETHER</h6>
-
-    <p>Search for usefull soure of your development and inspiration</p>
-  </div>
-  <div>
-  <form class="example" style="margin:auto;max-width:600px">
-  <input type="text" placeholder="  Search after the title,author,genre .." name="search2">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
-  </section>
-</div>
 </div>
 <!-- End Top Background Image Wrapper -->
 
@@ -130,38 +115,50 @@
     <!-- main body -->
     <!-- ################################################################################################ -->
     <div class="sectiontitle" >
-      <h6 class="heading font-x3">Latest News</h6>
-      <p>Check out the latest information .</p>
+      <h6 class="heading font-x3">FAQs</h6>
+      <p>Look at the most asked questions and ask yours.</p>
     </div>
-    <div class="posts">
-      <figure class="group">
-        <div><a class="imgover" href="#"><img src="header.jpg" alt=""></a></div>
-        <figcaption>
-          <h6 class="heading">The newly renovated Library</h6>
-          <p>The project regarding the renovation of the main UTM Library was finally renovated. Besides the modern ferniture,
-             the Library sdfgh sfghujik wsedrftgyhu asdfgh asdfghj sdfghj asdrftgyhuji ...</p>
-          <footer><a class="btn" href="#">Read more</a></footer>
-        </figcaption>
-      </figure>
-      <!-- ################################################################################################ -->
-      <figure class="group">
-        <div><a class="imgover" href="#"><img src="photo.jpg" alt=""></a></div>
-        <figcaption>
-          <h6 class="heading">Pharetra libero nisi</h6>
-          <p>Vel diam maecenas mattis massa nec rutrum mattis leo felis posuere eros eget elementum tortor leo non enim praesent id metus in auctor enim a tortor nunc laoreet.</p>
-          <footer><a class="btn" href="#">Read more</a></footer>
-        </figcaption>
-      </figure>
+
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
     <!-- ################################################################################################ -->
     <!-- / main body -->
-    <div class="clear"></div>
   </main>
 </div>
 
 <!-- ################################################################################################ -->
 
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+
+
+</script>
 
 
 <!-- FOOTER -->
