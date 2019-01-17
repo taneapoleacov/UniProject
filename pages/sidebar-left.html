@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="">
-<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<html lang="en">
+
 <head>
 <title>Shiphile | Pages | Sidebar Left</title>
 <meta charset="utf-8">
@@ -73,130 +73,567 @@
   <main class="hoc container clear">
     <!-- main body -->
     <!-- ################################################################################################ -->
+		<div class="row">
+		<div class="field-filter col-xs-12">
+		<span>Filters</span>
+		</div>
+		<div class="col-xs-12 col-sm-4 bs-region-left">
+		<div class="block-region-top-left" style="background-color:lightgrey;">
+			<section class="" style="padding:30px;">
+		<div class="block-content">
+		<form action="" method="get"  accept-charset="UTF-8">
+		<div class="">
 
-    <div class="sidebar one_quarter first" style="background-color:grey">
-        <section style="padding:30px 35px;">
-      <!-- ################################################################################################ -->
-      <nav class="sdb_holder" >
-        <form action="" method="get">
-        <ul>
-          <li>
-          <h2>Language</h2>
-          <select name="language" form="langform" style="width:100%;padding:5px;">
-            <option value="any">--ANY--</option>
-            <option value="english">English</option>
-            <option value="romania">Romanian</option>
-            <option value="russian">Russian</option>
-            <option value="french">French</option>
-          </select>
-          </li>
-          <li>
-            <h2>Category</h2>
-            <label><input type="checkbox" name="category" value="geography" style="display:inline;">Geography</label>
-            <label><input type="checkbox" name="category" value="mecanicsansphysics" style="display:inline">Mecanics/Physics</label>
-            <label><input type="checkbox" name="category" value="database" style="display:inline">Data Base</label>
-            <label><input type="checkbox" name="category" value="architecture" style="display:inline">Architecture</label>
-            <label><input type="checkbox" name="category" value="oop" style="display:inline">Object Oriented Programming</label>
-            <label><input type="checkbox" name="category" value="mathematics" style="display:inline">Mathematics</label>
-            <label><input type="checkbox" name="category" value="specialmathimatics" style="display:inline">Special Mathimatics</label>
-            <label><input type="checkbox" name="category" value="chemistry" style="display:inline">Chemistry</label>
-          </li>
-          <li>
-            <input type="submit" value="Apply" style="width:100%;padding:5px;">
-          </li>
-        </ul>
-      </form>
-      </nav>
-    </section>
-      <!-- ################################################################################################ -->
-    </div>
+		<div class="form-item">
+		<label for="edit-language" style="font-size:21px;">Language</label>
+		<div class="select-wrapper">
+			<select  class="form-select form-control" id="edit-language" name="language">
+				<option value="All" selected="selected">- Any -</option>
+				<option value="german">German</option>
+				<option value="english">English</option>
+				<option value="french">French</option>
+				<option value="italian">Italian</option>
+				<option value="latin">Latin</option>
+				<option value="romanian">Romanian</option>
+				<option value="russian">Russian</option>
+			</select></div>
+		</div>
+
+		<div class="form-item">
+		<label for="edit-type" style="font-size:21px;">Type</label>
+		<div class="select-wrapper">
+			<select  class="form-select form-control" id="edit-type" name="type">
+				<option value="All" selected="selected">- Any -</option>
+				<option value="text_book">Text book</option>
+				<option value="ebook">E-book</option>
+				<option value="journal">Journal</option>
+				<option value="ejournal">E-Journal</option>
+			</select></div>
+		</div>
+
+		<fieldset id="edit-field-genre">
+		<legend>
+		<span>Genre</span>
+		</legend>
+		<div>
+		<div>
+			<div>
+
+		<div class="form-item checkbox">
+		<label for="genre-1" >
+			<div class="checker" >
+				<span>
+					<input  class="form-checkbox" type="checkbox" id="genre-1" name="geography" value="1"></span>
+				</div>Geography</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-2" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-2" name="mathematics" value="2"></span>
+				</div>Mathematics</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-3" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-3" name="special_mathematics" value="3"></span>
+				</div>Special Mathematics</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-4" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-4" name="arhitecture" value="4"></span>
+				</div>Arhitecture</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-5" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-5" name="chemistry" value="5"></span>
+				</div>Chemistry</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-6" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-6" name="constructions" value="6"></span>
+				</div>Constructions</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-7" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-7" name="data_sructure_and_algorithms" value="7"></span>
+				</div>Data Sructure and Algorithms</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-8" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-8" name="object_oriented_programing" value="8"></span>
+				</div>Object Oriented Programing</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-9" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-9" name="computers_arhitecture" value="9"></span>
+				</div>Computers Arhitecture</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-10" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-10" name="cooking" value="10"></span>
+				</div>Cooking</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-11" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-11" name="fashion" value="11"></span>
+				</div>Fashion</label>
+		</div>
+
+		<div class="form-item checkbox">
+		<label for="genre-12" >
+			<div class="checker">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="genre-12" name="arts" value="12"></span>
+				</div>Arts</label>
+		</div>
+
+
+		<div class="form-item checkbox">
+		<label for="edit-field-genre-54" class="control-label option">
+			<div class="checker" id="uniform-edit-field-genre-54">
+				<span>
+					<input class="form-checkbox" type="checkbox" id="edit-field-genre-54" name="field_genre[54]" value="54"></span>
+				</div>Fashion</label>
+		</div>
+		</div>
+		</div>
+		</div>
+		</fieldset>
+		<input type="hidden" name="sort_by" value="field_downloads">
+		<div class="form-actions form-wrapper" id="edit-actions">
+			<button class="button form-submit btn" type="submit" id="submit-search" value="Apply" name="">Apply</button>
+		</div>
+		</div>
+		</form>
+		</div>
+		</section>
+		</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 bs-region bs-region--top-center">
+		<div class="block-region-top-center">
+
+			<section class="block main-title">
+		<div class="block-content text-center">
+		Search Results
+		</div>
+		</section>
+
+		<section>
+		<div>
+			<div>
+				<div>
+
+		<div class="view-content">
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book1.jpg" width="220" height="330" alt="Despre revolutie si paradigma" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Despre revolutie si paradigma</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book2.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book3.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book4.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book5.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book6.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book7.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book8.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+		</div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book9.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book10.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book11.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book12.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book13.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book14.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book15.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book16.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book17.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+		</div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book18.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+		</div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book19.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+			<article role="article" about="#">
+				<div class="content">
+		<div class="field-cover">
+			<a href="#"><img src="../images/gallery/book20.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
+		</div>
+		<div class="field-title text-center" style="height: 61.5556px;">
+			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
+		</div>
+		</article>
+	  </div>
+
+		</div>
+
+		<nav class="pager-nav text-center" role="navigation" >
+		<h4 class="visually-hidden">Pagination</h4>
+		<ul class="pagination ">
+		<li class="active">
+		<a href="sidebar-left.html" title="Current page" class="">
+		<span class="visually-hidden">
+		Current page
+		</span>1</a>
+		</li>
+
+		<li class="pager__item">
+		<a href="sidebar-left.html" title="Go to page 2" class="">
+		<span class="visually-hidden">
+		Page
+		</span>2</a>
+		</li>
+
+		<li class="pager__item">
+		<a href="#" title="Go to page 3" class="">
+		<span class="visually-hidden">
+		Page
+		</span>3</a>
+		</li>
+
+		<li class="pager__item">
+		<a href="#" title="Go to page 4" class="hidden-xs">
+		<span class="visually-hidden">
+		Page
+		</span>4</a>
+		</li>
+
+		<li class="pager__item">
+		<a href="#" title="Go to page 5" class="hidden-xs hidden-sm">
+		<span class="visually-hidden">
+		Page
+		</span>5</a>
+		</li>
+
+		<li class="pager__item">
+		<a href="#" title="Go to page 6" class="hidden-xs hidden-sm hidden-md">
+		<span class="visually-hidden">
+		Page
+		</span>6</a>
+		</li>
+
+		<li class="pager__item">
+		<a href="#" title="Go to page 7" class="hidden-xs hidden-sm hidden-md">
+		<span class="visually-hidden">
+		Page
+		</span>7</a>
+		</li>
+
+		<li class="pager__item">
+		<a href="#" title="Go to page 8" class="hidden-xs hidden-sm hidden-md">
+		<span class="visually-hidden">
+		Page
+		</span>8</a>
+		</li>
+
+		<li class="pager__item">
+		<a href="#" title="Go to page 9" class="hidden-xs hidden-sm hidden-md">
+		<span class="visually-hidden">
+		Page
+		</span>9</a>
+		</li>
+
+		<li class="pager__item pager__item--next">
+		<a href="#" title="Go to next page" rel="next">
+		<span class="visually-hidden">Next page</span>
+		<span aria-hidden="true">&gt;</span>
+		</a>
+		</li>
+
+		<li class="pager__item pager__item--last">
+		<a href="#" title="Go to last page" rel="last">
+		<span class="visually-hidden">Last page</span>
+		<span aria-hidden="true">&gt;&gt;</span>
+		</a>
+		</li>
+		</ul>
+		</nav>
+		</div>
+		</div>
+		</div>
+		</section>
+		</div>
+		</div>
+		</div>
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
-    <div class="content three_quarter">
-      <!-- ################################################################################################ -->
-      <div class="content">
-        <!-- ################################################################################################ -->
-        <div id="gallery">
-          <figure>
-            <header class="heading">Latest Books </header>
-            <ul class="nospace clear">
-              <li class="one_quarter first"><a href="firstbookpage.html"><img src="../images/gallery/book1.jpg" alt=""></a>
-              L aLa A DDHWHC HJjeduj edufj</li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book2.jpg" alt=""></a></li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book3.jpg" alt=""></a></li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book4.jpg" alt=""></a></li>
-              <li class="one_quarter first"><a href="#"><img src="../images/gallery/book5.jpg" alt=""></a></li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book6.jpg" alt=""></a></li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book6.jpg" alt=""></a></li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book7.jpg" alt=""></a></li>
-              <li class="one_quarter first"><a href="#"><img src="../images/gallery/book8.jpg" alt=""></a></li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book9.jpg" alt=""></a></li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book10.jpg" alt=""></a></li>
-              <li class="one_quarter"><a href="#"><img src="../images/gallery/book11.jpg" alt=""></a></li>
-            </ul>
-            <figcaption>Gallery Description Goes Here</figcaption>
-          </figure>
-        </div>
-        <!-- ################################################################################################ -->
-        <!-- ################################################################################################ -->
-        <nav class="pagination">
-          <ul>
-            <li><a href="#">&laquo; Previous</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><strong>&hellip;</strong></li>
-            <li><a href="#">6</a></li>
-            <li class="active"><strong>7</strong></li>
-            <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-            <li><strong>&hellip;</strong></li>
-            <li><a href="#">14</a></li>
-            <li><a href="#">15</a></li>
-            <li><a href="#">Next &raquo;</a></li>
-          </ul>
-        </nav>
-        <!-- ################################################################################################ -->
-      </div>
-      <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-    </div>
+
     <!-- ################################################################################################ -->
     <!-- / main body -->
     <div class="clear"></div>
   </main>
 </div>
 
+
+
+
 <!-- FOOTER -->
 <footer>
-  <ul class="faico clear">
-    <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
-    <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-    <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-    <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-    <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-    <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
-  </ul>
-	<p>
-	 <a>Technical University</a>, Chisinau.<br /><a>Contact UTM</a>
-	</p>
-</footer>
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-6 col-sm-4 col-md-4">
+					<a href="https://utm.md/en/"><img src="../images/gallery/utm1.png" alt="TUM Library"></a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+					<ul class="list-unstyled quick-links" >
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About us</a></li>
+            <li><a href="#">Get help</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4" style="margin:30px 0 0 0">
+					<h4>Social media</h4>
+					<ul class="list-unstyled list-inline social">
+						<li class="list-inline-item"><a href="https://www.facebook.com/BiblTehnStUTM/"><i class="fa fa-facebook"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white" >
+					<p class="h6">&copy2019 TUM Library - All rights Reversed.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+  </footer>
 
+<!-- END FOOTER -->
 
-
-</body>
-
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear">
-    <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->

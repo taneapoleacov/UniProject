@@ -7,7 +7,7 @@
 	<title>TUM Library</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../layout/styles/sty11.css" media="all">
+  <link rel="stylesheet" type="text/css" href="../layout/styles/stty.css" media="all">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div class="bgded overlay" style="background-image:url('images/backgrounds/photo-1.jpg');">
+
 <!-- HEADER -->
 <header>
 <div class="wrapper row1">
@@ -74,32 +74,39 @@
 <div class="wrapper row3">
   <main class="hoc container clear">
     <!-- main body -->
-    <div class="col-md-2">
+    <div class="col-md-3">
       <img src="../images/gallery/book1.jpg" alt="">
       <div style="padding:10px">
-        <button type="button" name="borrow" class="btn" >Borrow</button>
+        <button type="button" name="borrow" class="btn" style="margin-left:20px;">Borrow Book</button>
       </div>
     </div>
-    <div class="col-md-6" style="margin:0 50px 50px  50px">
-      <h4>The Falt in Our Stars</h4>
-      <br>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book. It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was popularised in
-        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-        and more recently with desktop publishing software like Aldus PageMaker
-        including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the
-        printing and typesetting industry. Lorem Ipsum has been the industry's standard
-        dummy text ever since the 1500s, when an unknown printer took a galley of type
-        and scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining essentially
-        unchanged. It was popularised in the 1960s with the release of Letraset sheets
-        containing Lorem Ipsum passages, and more recently with desktop publishing software
-        like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
+    <div class="col-sm-8 col-md-6 book-overview">
+      <section>
+        <h3>The Falt in Our Stars</h3>
+        <h5>by John Green</h5>
+        <br>
+      </section>
+      <section class="book-info">
+        <ul>
+          <li>Puplished:1998</li>
+          <li>Category:Arts</li>
+          <li>Language:English</li>
+        </ul>
+
+      </section>
+      <article class="book-overview">
+        <h4> Summary</h4>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+          and more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </article>
     </div>
     <!-- ################################################################################################ -->
 
@@ -112,11 +119,48 @@
 <!-- ################################################################################################ -->
 
 <!-- FOOTER -->
+<!-- Footer -->
 <footer>
-	<p>
-	 <a>Technical University</a>, Chisinau.<br /><a>Contact UTM</a>
-	</p>
-</footer>
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-6 col-sm-4 col-md-4">
+					<a href="https://utm.md/en/"><img src="../images/gallery/utm1.png" alt="TUM Library"></a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+					<ul class="list-unstyled quick-links" >
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About us</a></li>
+            <li><a href="#">Get help</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4" style="margin:30px 0 0 0">
+					<h4>Social media</h4>
+					<ul class="list-unstyled list-inline social">
+						<li class="list-inline-item"><a href="https://www.facebook.com/BiblTehnStUTM/"><i class="fa fa-facebook"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+
+					</ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white" >
+					<p class="h6">&copy2019 TUM Library - All rights Reversed. </a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+  </footer>
+	<!-- ./Footer -->
+
 
 
 </body>
