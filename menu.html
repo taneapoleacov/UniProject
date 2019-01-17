@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1 , user-scalable=0">
+  <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1 , user-scalable=0"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<title>TUM Library</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id="top">
 <div class="bgded overlay" style="background-image:url('images/backgrounds/photo-1.jpg');">
 <!-- HEADER -->
 <header>
@@ -55,7 +55,7 @@
   </li>
 
   <li>
-	  <a href="/register/" role="button" aria-expanded="false">Register</a>
+	  <a href="pages/register.html" role="button" aria-expanded="false">Register</a>
   </li>
 		</div>
 	</nav>
@@ -93,7 +93,7 @@
     </div>
     <div class="posts">
       <figure class="group">
-        <div><a class="imgover" href="#"><img src="images/gallery/header.jpg" alt=""></a></div>
+        <div><a class="imgover" href="#"><img src="images/photo-books.jpg" alt=""></a></div>
         <figcaption>
           <h6 class="heading">The newly renovated Library</h6>
           <p>The project regarding the renovation of the main UTM Library was finally renovated. Besides the modern ferniture,
@@ -103,7 +103,7 @@
       </figure>
       <!-- ################################################################################################ -->
       <figure class="group">
-        <div><a class="imgover" href="#"><img src="images/gallery/photo.jpg" alt=""></a></div>
+        <div><a class="imgover" href="#"><img src="images/photo-library.jpg" alt=""></a></div>
         <figcaption>
           <h6 class="heading">Pharetra libero nisi</h6>
           <p>Vel diam maecenas mattis massa nec rutrum mattis leo felis posuere eros eget elementum tortor leo non enim praesent id metus in auctor enim a tortor nunc laoreet.</p>
@@ -172,30 +172,6 @@
             <img src="images/gallery/book1.jpg" alt="">
           </div>
         </div>
-
-        <script>
-          $(document).ready(function() {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-              margin: 10,
-              nav: true,
-              loop: true,
-              responsive: {
-                0: {
-                  items: 1
-                },
-
-                600: {
-                  items: 3
-                },
-
-                1000: {
-                  items: 5
-                }
-              }
-            })
-          })
-        </script>
       </div>
     </div>
   </section>
@@ -217,17 +193,18 @@
 				</div>
 				<div class="col-xs-6 col-sm-4 col-md-4">
 					<ul class="list-unstyled quick-links" >
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About us</a></li>
-            <li><a href="#">Get help</a></li>
-						<li><a href="#">FAQs</a></li>
-						<li><a href="#">Contact us</a></li>
+						<li><a href="menu.html">Home</a></li>
+						<li><a href="pages/about1.html">About us</a></li>
+            <li><a href="pages/">Get help</a></li>
+						<li><a href="pages/faqs">FAQs</a></li>
+						<li><a href="pages/">Contact us</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-6 col-sm-4 col-md-4" style="margin:30px 0 0 0">
 					<h4>Social media</h4>
 					<ul class="list-unstyled list-inline social">
-						<li class="list-inline-item"><a href="https://www.facebook.com/BiblTehnStUTM/"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.facebook.com/BiblTehnStUTM/"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="mailto:powerpuff.random@gmail.com"><i class="fa fa-envelope"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -248,6 +225,34 @@
 	</section>
   </footer>
 	<!-- ./Footer -->
+
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+  <!-- JAVASCRIPTS -->
+  <script src="layout/scripts/jquery.backtotop.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+
+          600: {
+            items: 3
+          },
+
+          1000: {
+            items: 5
+          }
+        }
+      })
+    })
+  </script>
 
 </body>
 </html>

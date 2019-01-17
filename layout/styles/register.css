@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey|Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Roboto');
+*{
+box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Indie Flower', cursive;*/
+	/*font-family: 'Permanent Marker', cursive;*/
+	/*font-family: 'Indie Flower', cursive;*/
+	   /* font-family: "Happy Monkey", cursive;*/
+	/*background: #CDA1CA;*/
+	/*background: #F5A5B8;
+font-family: 'Montserrat', sans-serif;
+background:url('m2.jpg') no-repeat top center;
+background-size: cover;
+height:100vh;*/
+/*background:linear-gradient(to right, #0DCAF2, #D411C5);*/
+/*background: linear-gradient(to right ,#ffecd2 , #fcb69f);*/
+background: linear-gradient(to right,#d299c2,#fef9d7);
+}
+.container{
+
+	background:#120b1f;
+	max-width: 350px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+	color:#fff;
+	border-radius: 15px;
+}
+.input-container{
+	display: flex;
+	display: -ms-flexbox;
+	width:100%;
+	margin-bottom: 15px; 
+}
+.icon{
+	padding: 10px;
+	background: dodgerblue ;
+	color:#fff;
+	min-width: 50px;
+	text-align: center;
+}
+.input-field{
+	width: 100%;
+	padding: 10px;
+	outline: none;
+font-family: 'Montserrat', sans-serif;
+}
+.input-field:focus{
+border: 2px solid dodgerblue;
+}
+.btn{
+	background: dodgerblue;
+	color:#fff;
+	padding: 15px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 50px;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+.btn:hover{
+	background:linear-gradient(to right, #0DCAF2, #D411C5);
+}
