@@ -38,25 +38,25 @@
     <a href="../menu.html">Home</a>
   </li>
   <li>
-    <a href="pages/sidebar-left.html"role="button" aria-expanded="false">Browse</a>
+    <a href="sidebar-left.html"role="button" aria-expanded="false">Browse</a>
     </li>
 
   <li>
-	  <a href="/services/" role="button" aria-expanded="false">Services</a>
-  </li>
-
-  <li>
-	  <a href="/rules/" role="button" aria-expanded="false">About the Library</a>
+	  <a href="about1.html" role="button" aria-expanded="false">About the Library</a>
   </li>
 
 
   <li>
-	  <a href="/help/" role="button" aria-expanded="false">Get Help</a>
+	  <a href="contavt.html" role="button" aria-expanded="false">Get Help</a>
   </li>
 
   <li>
-	  <a href="pages/login.html" role="button" aria-expanded="false">Login</a>
+	  <a href="login.html" role="button" aria-expanded="false">Login</a>
   </li>
+
+	<li>
+		<a href="register.html" role="button" aria-expanded="false">Services</a>
+	</li>
 
 		</div>
 	</nav>
@@ -74,10 +74,10 @@
 		<div class="top-part">
 		<div class="container">
 		<div class="row">
-		<div class="col-xs-12 col-sm-4 col-md-2 top-part-left">
+		<div class="col-xs-12 col-sm-3 col-md-2 top-part-left">
 		<section>
 			<div id="profile-container">
-				 <image id="profileImage" src="../images/photo-1512820790803-83ca734da794.jpg" />
+				 <image id="profileImage" src="../images/gallery/o1.png" />
 			</div>
 			<input id="imageUpload" type="file"
 						 name="profile_photo" placeholder="Photo" required="" capture>
@@ -88,24 +88,25 @@
 		<div><button class="btn" type="button" name="button" style="margin-top:20px;">Donate a book</button></div>
 		</div>
 	</div>
-		<div class="col-xs-12 col-sm-8 col-md-6 top-center">
+
+		<div class="col-xs-12 col-sm-6 col-md-6 top-center">
 		<div class="row">
 		<div>
 			<section class="col-xs-12">
 		<div class="field field--name-field-full-name field--type-string field--label-hidden field--item">
-			<div class="form-group"><h3>Tatiana Poleacov</h3><a href="#" class="edit-link" hreflang="en">edit</a></div>
+			<div class="form-group"><h3>Veronica Bivol</h3><a href="#" class="edit-link" hreflang="en">edit</a></div>
 		</div>
 		</section>
 		<section class="col-xs-12">
 		<div>
 			I'm a very hardworking girl that likes to read but doesn't have time to do that.
 				 I like everything that is related to techologies becous I'm a Software Engineering
-				 student eager to learn more. This web-site design is the resoult of the hard wark
-				 of two girls that wish they sooner and faster ended this semester.</div>
+				 student eager to learn more. </div>
 		</section>
 		</div>
 		</div>
 		</div>
+
 		</div>
 
 <div class="bottom-part" style="margin:50px 0">
@@ -113,14 +114,14 @@
 <div class="row">
 <div class="col-xs-12">
 	<section class="">
-<h2>Tatiana Poleacov’s favorite books</h2>
+<h2>Veronica Bivol’s favorite books</h2>
 <div class="block-content">
 <div class="mb-width-grid-manage-responsive row mb-custom-view">
 <div class="view-content">
 <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
 <article >
 <div>
-<a href="#"><img src="../images/gallery/book3.jpg" width="220" height="330" alt="" typeof="foaf:Image" class="img-responsive">
+<a href="#"><img src="../images/gallery/book3.jpg" width="300" height="400" alt="" typeof="foaf:Image" class="img-responsive">
 </a>
 </div>
 <div style="height: 61.5556px;">
@@ -132,7 +133,7 @@
 <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
 <article>
 <div class="field--name-field-cover">
-<a href="#"><img src="../images/gallery/book20.jpg" width="220" height="330" alt="" typeof="foaf:Image" class="img-responsive">
+<a href="#"><img src="../images/gallery/book20.jpg" width="300" height="400" alt="" typeof="foaf:Image" class="img-responsive">
 </a>
 </div>
 <div style="height: 61.5556px;">
@@ -144,7 +145,7 @@
 <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 ">
 <article>
 <div>
-<a href="#"><img src="../images/gallery/book13.jpg" width="220" height="330" alt="" typeof="foaf:Image" class="img-responsive">
+<a href="#"><img src="../images/gallery/book13.jpg" width="300" height="400" alt="" typeof="foaf:Image" class="img-responsive">
 </a>
 </div>
 <div style="height: 61.5556px;">
@@ -211,25 +212,7 @@
  </footer>
 
 <!-- END FOOTER -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-
-<script type="text/javascript">
-$("#profileImage").click(function(e) {
-$("#imageUpload").click();
-});
-
-function fasterPreview( uploader ) {
-if ( uploader.files && uploader.files[0] ){
-	 $('#profileImage').attr('src',
-			window.URL.createObjectURL(uploader.files[0]) );
-}
-}
-
-$("#imageUpload").change(function(){
-fasterPreview( this );
-});
-</script>
 
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
