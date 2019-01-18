@@ -8,10 +8,32 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../layout/styles/stty.css" media="all">
+<link rel="icon" type="image/png" href="../images/gallery/newlogo_1.png"sizes="128x128">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
+<style>
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../images/gallery/searchicon(1).png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+</style>
+
 </head>
 <body>
 
@@ -74,9 +96,11 @@
     <!-- main body -->
     <!-- ################################################################################################ -->
 		<div class="row">
-		<div class="field-filter col-xs-12">
-		<span>Filters</span>
-		</div>
+
+			<form class="book-search">
+	  <input type="text" name="search" placeholder="Search..">
+	   </form>
+
 		<div class="col-xs-12 col-sm-4 bs-region-left" style="padding:15px;">
 		<div class="block-region-top-left" style="background-color:lightgrey;">
 			<section class="" style="padding:30px;">
@@ -601,7 +625,7 @@
 	 <div class="container">
 		 <div class="row text-center text-xs-center text-sm-left text-md-left">
 			 <div class="col-xs-6 col-sm-4 col-md-4">
-				 <a href="https://utm.md/en/"><img src="../images/gallery/utm1.png" alt="TUM Library"></a>
+				 <a href="https://utm.md/en/"><img src="../images/gallery/utm_logo.png" alt="TUM Library"></a>
 			 </div>
 			 <div class="col-xs-6 col-sm-4 col-md-4">
 				 <ul class="list-unstyled quick-links" >

@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="layout/styles/stty.css" media="all">
+  <link rel="icon" type="image/png" href="images/gallery/newlogo_1.png"sizes="128x128">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -97,8 +98,13 @@
         <figcaption>
           <h6 class="heading">The newly renovated Library</h6>
           <p>The project regarding the renovation of the main UTM Library was finally renovated. Besides the modern ferniture,
-             the Library sdfgh sfghujik wsedrftgyhu asdfgh asdfghj sdfghj asdrftgyhuji ...</p>
-          <footer id="footer"><a class="btn" href="#">Read more</a></footer>
+             the Library sdfgh sfghujik wsedrftgyhu asdfgh asdfghj sdfghj asdrftgyhuji sdfghj lkjhgf vgbhjnkm,l
+             <span id="dots">...</span><span id="more">bhdjhdcjivfi edbjhfjivrfij edbhfcjvji edvhjfviv v defgvfhvjifeve fegvefufe
+             asdf asdfgh dfgh sdftgyh sdfghj sdfghj sdfghj asdfghj qwsdfghj asdfghj wefghj sdfgh jkwdfgh jkwer tyu sdfghjk wertyj
+              asdfghj sdfghjk sdfghj ksdfg hjkld fghjkl sdfghjk sdfghjk sdfghjs dfghj sdfgjks dfghj sdfghj
+           </span></p>
+           <button onclick="myFunction()" id="myBtn" class="btn">Read more</button>
+
         </figcaption>
       </figure>
       <!-- ################################################################################################ -->
@@ -106,8 +112,14 @@
         <div><a class="imgover" href="#"><img src="images/photo-library.jpg" alt=""></a></div>
         <figcaption>
           <h6 class="heading">Pharetra libero nisi</h6>
-          <p>Vel diam maecenas mattis massa nec rutrum mattis leo felis posuere eros eget elementum tortor leo non enim praesent id metus in auctor enim a tortor nunc laoreet.</p>
-          <footer id="footer"><a class="btn" href="#">Read more</a></footer>
+          <p>The project regarding the renovation of the main UTM Library was finally renovated. Besides the modern ferniture,
+             the Library sdfgh sfghujik wsedrftgyhu asdfgh asdfghj sdfghj asdrftgyhuji sdfghj lkjhgf vgbhjnkm,l
+             <span id="dot">...</span><span id="mores">bhdjhdcjivfi edbjhfjivrfij edbhfcjvji edvhjfviv v defgvfhvjifeve fegvefufe
+             asdf asdfgh dfgh sdftgyh sdfghj sdfghj sdfghj asdfghj qwsdfghj asdfghj wefghj sdfgh jkwdfgh jkwer tyu sdfghjk wertyj
+              asdfghj sdfghjk sdfghj ksdfg hjkld fghjkl sdfghjk sdfghjk sdfghjs dfghj sdfgjks dfghj sdfghj sdfghj sdfghj sertyu
+              wertyui sdfghj dfghjk dfghjkl dfyhjkl
+           </span></p>
+           <button onclick="myFunct()" id="myBn" class="btn">Read more</button>
         </figcaption>
       </figure>
     <!-- ################################################################################################ -->
@@ -189,7 +201,7 @@
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-6 col-sm-4 col-md-4">
-					<a href="https://utm.md/en/"><img src="images/gallery/utm1.png" alt="TUM Library"></a>
+					<a href="https://utm.md/en/"><img src="images/gallery/utm_logo.png" alt="TUM Library"></a>
 				</div>
 				<div class="col-xs-6 col-sm-4 col-md-4">
 					<ul class="list-unstyled quick-links" >
@@ -253,6 +265,41 @@
       })
     })
   </script>
+
+  <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunct() {
+var dots = document.getElementById("dot");
+var moreText = document.getElementById("mores");
+var btnText = document.getElementById("myBn");
+
+if (dots.style.display === "none") {
+  dots.style.display = "inline";
+  btnText.innerHTML = "Read more";
+  moreText.style.display = "none";
+} else {
+  dots.style.display = "none";
+  btnText.innerHTML = "Read less";
+  moreText.style.display = "inline";
+}
+}
+</script>
 
 </body>
 </html>
