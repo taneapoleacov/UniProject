@@ -4,7 +4,7 @@
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1 , user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<title>About Library</title>
+	<title>TUM Library</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../layout/styles/stty.css" media="all">
@@ -40,7 +40,7 @@
     <a href="../menu.html">Home</a>
   </li>
   <li>
-    <a href="sidebar-left.html"role="button" aria-expanded="false">Browse</a>
+    <a href="browse.html"role="button" aria-expanded="false">Browse</a>
   </li>
 
   <li class=" active">
@@ -67,7 +67,7 @@
 <!-- TOP BANNER -->
 <section>
 	<div class="topbanner">
-    <img src="../images/gallery/lib5.jpg" title="about.jpg" alt="[section photo]"/>
+    <img src="../images/gallery/lib5.jpg" title="Images/about.jpg" alt="[section photo]" />
 
 	</div>
 	<div class="actionbar" id="actionbar">
@@ -90,7 +90,7 @@
             	 <ul>
 			<li>
             <a href ="contactform.html">
-					<span class="actionbaricon chat"> <i class="fa fa-comments fa-right fa-border fa-4x" style="color:#003333"aria-hidden="true"></i></span>
+					<span class="actionbaricon chat"> <i class="fa fa-comments fa-right fa-4x" style="color:#474747;"aria-hidden="true"></i></span>
 					<h2>Ask a question</h2>
 
 				</a>
@@ -100,14 +100,29 @@
 
 
 
-			  <div class="relative">
+                <div class="relative">
 				<!-- The page title holder on mobile only -->
-                <div class="mobileActivePageHolder visible-xs">Services<</div>
-				<!-- The page title holder on mobile only -->
+                  <div class="topnav" id="myTopnav">
+  <a href="about2.html" >Collections & Activities</a>
+  <a href="about1.html" >Access &  Opening Hours</a>
+  <a href="about3.html" >History  &  Structures</a>
+   <a href="about4.html" class="activation"> Servises</a>
 
-               <ul><li><a href="about2.html">Collections & Activities</a></li><li><a href="about1.html">Access &  Opening Hours</a></li><li ><a href="about3.html">History & Structures</a></li><li class="active"><a href="about4.html">Servises</a></li></ul>
 
-			  </div>
+ <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#11167;</a>
+</div>
+
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>  </div>
+
 
 		</div>
 
@@ -148,7 +163,7 @@ Bibliographic information tools provided by the library provide direct and rapid
 
             <h3>Photogallery</h3>
 
-                  <p class="photo"> <a class="cboxElement" href="../images/gallery/lll.jpg" title="."><img src="../images/gallery/lll.jpg" /></a></p  >
+                  <p class="photo"> <a class="cboxElement" href="../images/gallery/lll.jpg" title=""><img src="../images/gallery/lll.jpg" /></a></p  >
 
 
 
@@ -178,7 +193,7 @@ Bibliographic information tools provided by the library provide direct and rapid
 				<div class="col-xs-6 col-sm-4 col-md-4">
 					<ul class="list-unstyled quick-links" >
 						<li><a href="../menu.html">Home</a></li>
-            <li><a href="about1.html">About us</a></li>
+            <li><a href="about2.html">About us</a></li>
             <li><a href="contact.html">Get help</a></li>
             <li><a href="faqs.html">FAQs</a></li>
             <li><a href="contact.html">Contact us</a></li>

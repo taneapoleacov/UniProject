@@ -7,6 +7,7 @@
 
 #more {display: none;}
 #mores {display: none;}
+/*All book search*/
 
 .book-search input[type=text] {
   margin-left: 15px;
@@ -27,6 +28,56 @@
 .book-search input[type=text]:focus {
   width: 100%;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .book-search input[type=text] {
+    margin-left: 15px;
+    width: 91%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../../images/gallery/searchicon(1).png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .book-search input[type=text]:focus {
+    width: 91%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .book-search input[type=text] {
+    margin-left: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../../images/gallery/searchicon(1).png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .book-search input[type=text]:focus {
+    width: 95%;
+  }
+}
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
 
 
 .top-part-left{
@@ -69,23 +120,14 @@
 
 #backtotop:hover{opacity:1;}
 
-#backtotop{color:#FFFFFF; background-color:#ccd4e5;}
+#backtotop{color:#FFFFFF; background-color:#dbdbdb;}
 
 /*My Account*/
 
-#imageUpload
-{
-    display: none;
-}
 
-#profileImage
-{
-    cursor: pointer;
-}
-
-#profile-container {
-    width: 150px;
-    height: 150px;
+#profileImage {
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -94,13 +136,15 @@
     border-radius: 50%;
 }
 
-#profile-container img {
-    width: 150px;
-    height: 150px;
+.borr-book{
+  margin-left:10px
 }
 
-
 /*End my account*/
+.top-part{
+  margin-left: 50px;
+  margin-bottom: 20px
+}
 
 .main-title{
   font-size:32px;
@@ -109,6 +153,10 @@
 .field-title a{
   color: #3e3e3e;
   text-overflow: clip;
+}
+
+.field-title h4{
+  color: #DC143C
 }
 
 .field-filter{
@@ -129,6 +177,11 @@
 .view-content{
   content: "";
   display:table;
+  padding: 15px
+}
+
+.top-part-left-button button{
+  margin-left:50%
 }
 
 nav .pager-nav .text-center{text-align:center}
@@ -138,6 +191,49 @@ nav .pager-nav .text-center{text-align:center}
 .field-filter{
   text-align: center;
 }
+.top-part{
+  margin-left: 10px;
+}
+
+.top-part-left{
+  margin-left:20%
+}
+
+.top-part-left-button button{
+  margin-left:10%
+}
+
+.top-center{
+  margin-top: 70px
+}
+
+.bottom-part{
+  margin-bottom: 0
+}
+
+#profileImage {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.view-content{
+  padding: 15px 0
+}
+
+.borr-book{
+  margin-left:0
+}
+
+.field-title h4{
+  font-size: 14px;
+}
+
 }
 @media (min-width: 481px) and (max-width: 767px) {
 
@@ -147,9 +243,30 @@ nav .pager-nav .text-center{text-align:center}
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #profileImage {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+  }
+
+}
+
 /*end book*/
 
 /*A book page*/
+
+.about-book{
+  padding-left: 20px;
+  margin-left:20px;
+  margin-right:40px;
+}
 
 .book-info{
   padding-top: 20px;
@@ -169,11 +286,57 @@ nav .pager-nav .text-center{text-align:center}
   box-shadow: 3px 2px 10px -3px #000;
 }
 
+.about-book button{
+  margin-left: 10%
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .about-book{
+    padding-left: 20px;
+    margin-right: 0;
+  }
+
+  .book-info ul{
+    text-align: center;
+  }
+
+.about-book img{
+  margin-left:16%;
+}
+.about-book button{
+  margin-left: 26%
+}
+}
+
+
 @media (min-width: 481px) and (max-width: 767px) {
 
   .book-overview{
     margin-left: 0;
+  }
 
+  .book-info ul{
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .book-info ul{
+    text-align: center;
+    font-size: 12px
+  }
+
+  .about-book{
+    padding-left: 20px;
+    margin-left:30px;
+    margin-right:70px;
+  }
+
+  .about-book button{
+    margin-left: 0
   }
 }
 
@@ -182,7 +345,7 @@ nav .pager-nav .text-center{text-align:center}
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 footer section {
-    padding: 50px 0;
+    padding: 30px 0 10px 0;
 }
 
 footer section .section-title {
@@ -195,9 +358,11 @@ footer #footer {
     background: #20ad91; !important;
 }
 footer #footer h4{
-	padding-left: 10px;
+	  padding-left: 10px;
     padding-bottom: 6px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+
     color:#ffffff;
 }
 footer #footer a {
@@ -246,7 +411,8 @@ footer #footer ul.quick-links li:hover a i {
     font-weight: 700;
 }
 footer #footer img{
-	width: 180px;
+	width: 120px;
+  margin-top: 30px;
 }
 
 @media (max-width:767px){
@@ -256,7 +422,8 @@ footer #footer img{
     margin-bottom: 10px;
 }
 footer #footer img{
-	width: 150px;
+	width: 120px;
+  margin-top: 30px;
 }
 footer section {
     padding: 10px 0;
@@ -266,6 +433,7 @@ footer section {
 
 
 /*OWL Carousel*/
+
 
 .owl-carousel .animated {
   -webkit-animation-duration: 1000ms;
@@ -390,6 +558,7 @@ footer section {
  text-decoration: none;
  text-transform: none;
  padding-left: 20px;
+ color: #3e3e3e;
 }
 
 .owl-carousel.owl-text-select-on .owl-item {
@@ -549,13 +718,18 @@ footer section {
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px){
 
   .owl-nav .owl-prev {
     left: -25px;
   }
   .owl-nav .owl-next {
     right: -25px;
+  }
+
+  .owl-carousel .owl-item img{
+    margin-left: 10px;
+    margin-right: 5px;
   }
 
 }
@@ -616,7 +790,7 @@ footer section {
 
 .row2{color:#474747; background-color:#EFEFEF;}
 .row3{color:#474747;background-color:#fbfcfd;padding-top: 30px;padding-bottom: 30px;}
-.row4{color:#474747;background-color:#fbfcfd;padding-top: 40px;padding-bottom: 50px;}
+.row4{color:#474747;background-color:#fbfcfd;padding-top: 40px;padding-bottom: 70px;}
 .row5, .row5 a{color:#5F6F89; background-color:#2C3541;}
 
 
@@ -2236,26 +2410,50 @@ border-radius:4px}.breadcrumb>li{
 padding:0 5px;color:#ccc;content:"/\00a0"}.breadcrumb>.active{
  color:#777}
  .pagination{
- display:inline-block;padding-left:0;margin:20px 0;
- border-radius:4px}
- .pagination>li{display:inline-block}
- .pagination>li>a,.pagination>li>span{
- position:relative;float:left;padding:6px 12px;
- margin-left:-1px;line-height:1.42857143;color:#337ab7;
- text-decoration:none;
- background-color:#fff;border:1px solid #ddd}.pagination>li:first-child>a,
- .pagination>li:first-child>span{
- margin-left:0;border-top-left-radius:4px;border-bottom-left-radius:4px}.pagination>li:last-child>a,
- .pagination>li:last-child>span{
-border-top-right-radius:4px;border-bottom-right-radius:4px}.pagination>li>a:focus,
-.pagination>li>a:hover,.pagination>li>span:focus,
-.pagination>li>span:hover{
-color:#23527c;background-color:#eee;border-color:#ddd}.pagination>.active>a,
+   display:inline-block;
+   padding-left:0;
+   margin:20px 0;
+   border-radius:5px}
+
+   .pagination>li{display:inline-block}
+   .pagination>li>a,.pagination>li>span{
+     position:relative;
+     float:left;
+     padding:6px 12px;
+     margin-left:-1px;
+     line-height:1.42857143;
+     color:#474747;
+     text-decoration:none;
+     background-color:transparent;
+     border:transparent;}
+
+
+.pagination>li:first-child>a,.pagination>li:first-child>span{
+  margin-left:0;
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px}
+
+  .pagination>li:last-child>a,.pagination>li:last-child>span{
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px}
+
+.pagination>li>a:focus,.pagination>li>a:hover,
+.pagination>li>span:focus,.pagination>li>span:hover{
+  color:#19b698;
+  background-color:#eee;
+  border-color:#19b698}
+
+ .pagination>.active>a,
  .pagination>.active>a:focus,
  .pagination>.active>a:hover,
  .pagination>.active>span,.pagination>.active>span:focus,
 .pagination>.active>span:hover{
- z-index:2;color:#fff;cursor:default;background-color:#337ab7;border-color:#337ab7}
+  z-index:2;color:#19b698;
+  cursor:default;
+  background-color:transparent;
+  border-color:#19b698;
+  font-weight: bold;
+}
  .pagination>.disabled>a,
  .pagination>.disabled>a:focus,.pagination>.disabled>a:hover,.pagination>.disabled>span,
  .pagination>.disabled>span:focus,.pagination>.disabled>span:hover{
@@ -3345,7 +3543,7 @@ font-size: 95%;
 .actionbar .linkroute .sep{	font-size: 26px;padding: 0 8px;}
 .actionbar .linkroute a,.actionbar .linkroute h1{
 	font-size: 24px !important;
-	color: #004C3C !important;
+	color: #474747; !important;
 
 	display: inline-block;
 
@@ -3474,7 +3672,7 @@ font-size: 95%;
 }
 
 .midcontainer{ padding: 0 25px 50px; }
-.midcontainer img, .archivesec img{	border-radius: 6px;}
+.midcontainer img, .archivesec img{	border-radius: 3px;}
 
 .midcontainer p{
 	color: #615A4C;
@@ -3900,6 +4098,9 @@ filter: alpha(opacity=50);
 	.midcontainer h2,.midcontainer p, .midcontainer h4 {margin-left: 10px;	margin-right: 10px;}
 	/*.archivesec{margin-top: 60px}*/
 	.archivesec h2{	text-align: left;padding-left: 20px;}
+  .archivesec h3{	text-align: center;}
+  .archivesec img{margin-left:25%
+  }
 	.archivesec .inner{padding: 0;}
 	.archivesec .inner > h3, .archivesec .inner > .checkmore{padding-left: 10px;padding-right: 10px;}
 	.archivesec .inner .photogal{width: 200px;}
@@ -4036,4 +4237,93 @@ div.ba{
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+.topnav {
+  background-color: #e5e0e0;
+  overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+  display: block;
+  color: #474747;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Add an active class to highlight the current page */
+.activation {
+  background-color: #d4d8d8;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover{
+  background-color:#d4d8d8;
+  color: black;
+}
+
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn{
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown{float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .topnav a {
+  float: left;
+    display: block;
+    color: #474747;;
+    padding: 14px ;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+
+  .actionbaricon {margin-left: 20px}
+
 }

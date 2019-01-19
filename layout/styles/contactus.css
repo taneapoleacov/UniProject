@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
- 
+
 *{
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
 }
- 
+
 body{
    /* background: linear-gradient(to right,#df89b5,#bfd9fe);*/
    /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
@@ -18,23 +18,22 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
- 
+
 .wrapper{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
- 
+
 .contact-form{
     width: 100%;
-    max-width: 500px;
     height: auto;
     background: rgba(0,0,0,0.7);
     padding: 40px 50px;
     border-radius: 5px;
 }
- 
+
 .title{
     font-size: 2em;
     line-height: 1.25em;
@@ -47,16 +46,16 @@ body{
 
     padding-bottom: 15px;
 }
- 
+
 .input-fields {
     padding: 0 30px;
 }
- 
+
 .input-fields .items{
     width: 100%;
     padding-bottom: 15px;
-} 
- 
+}
+
 .input-fields .items .label{
     display: block;
     font-size: 1em;
@@ -65,7 +64,7 @@ body{
     transition: all 0.5s ease;
     padding-bottom: 5px;
 }
- 
+
 .input-fields .items .input,
 .input-fields .items .text-area{
     background: transparent;
@@ -77,12 +76,12 @@ body{
     color: #ffecb3;
     border-radius: 3px;
 }
- 
+
 /*.btn{
     margin: 0 30px;
     background: #ffc107;
     color: #ffecb3;
-    font-size: 1.25em;  
+    font-size: 1.25em;
     padding: 10px 0;
     text-align: center;
     text-transform: uppercase;
@@ -100,33 +99,66 @@ body{
     cursor: pointer;
     text-transform: uppercase;
      margin: 0 30px;
-     font-size: 1.25em;  
+     font-size: 1.25em;
     padding: 10px 0;
     text-align: center;
-    
-    
+
+
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 2px;
 }
 .btn:hover{
-    
+
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
- 
+
 .items #msg{
     height: 100px;
 }
- 
- 
+
+
 /* jquery code */
 .input-fields .items .input.active .label{
     font-size: 15px;
     top: 0;
 }
- 
+
 @media screen and (max-width: 1000px){
     .input-fields {
         padding: 0;
+    }
+
+    .contact-form{
+        height: 900px;
+        width: 700px;
+        background: rgba(0,0,0,0.7);
+        padding: 40px 50px;
+        border-radius: 5px;
+    }
+
+    .input-fields .items .input,
+    .input-fields .items .text-area{
+        background: transparent;
+        border: 0;
+        border: 1px solid #ffecb3;
+        width: 100%;
+        padding: 20px 10px;
+        font-size: 1.7em;
+        color: #ffecb3;
+        border-radius: 3px;
+    }
+
+    .input-fields .items .label{
+        display: block;
+        font-size: 1.7em;
+        color: #ffecb3;
+        text-transform: capitalize;
+        transition: all 0.5s ease;
+        padding-bottom: 5px;
+    }
+
+    .items #msg{
+        height: 250px;
     }
 }

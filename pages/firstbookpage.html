@@ -30,7 +30,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-      <a class="navbar-brand" href="../menu.html"><img src="../images/gallery/DIFFERENT.png" style="width:100px; height:50px;"  alt="Technical University" title="UTM"/></a>
+      <a class="navbar-brand" href="../menu.html"><img src="../images/gallery/logo.png" style="width:100px; height:50px;"  alt="Technical University" title="UTM"/></a>
 			</div>
       <p class="noshow"><a href="#actionbar">Skip navigation</a></p>
 			<div class="collapse navbar-collapse" id="topmenu">
@@ -42,11 +42,11 @@
   </li>
 
   <li class=" active">
-    <a href="sidebar-left.html"role="button" aria-expanded="false">Browse</a>
+    <a href="browse.html"role="button" aria-expanded="false">Browse</a>
   </li>
 
   <li>
-	  <a href="about1.html" role="button" aria-expanded="false">About the Library</a>
+	  <a href="about2.html" role="button" aria-expanded="false">About the Library</a>
   </li>
 
   <li>
@@ -76,8 +76,9 @@
 
 <div class="wrapper row3">
   <main class="hoc container clear">
+  
     <!-- main body -->
-    <div class="col-md-2" style="padding-left: 20px;margin-left:20px;margin-right:40px;">
+    <div class="col-md-2 col-sm-2 about-book" style="">
       <img src="../images/gallery/book1.jpg" alt="">
       <section class="book-info">
         <ul>
@@ -90,7 +91,7 @@
         </ul>
 
       </section>
-      <div style="padding:10px">
+      <div>
         <button type="button" name="borrow" class="btn" >Borrow Book</button>
       </div>
     </div>
@@ -121,7 +122,52 @@
   </main>
 </div>
 <!-- ################################################################################################ -->
+<div class="wrapper row4">
 
+<div class="container" style="padding:0 10px">
+  <div class="sectiontitle" >
+    <h6 class="heading font-x3">Books of the same auther</h6>
+  </div>
+  <section id="demos">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <a href="#"><img src="../images/gallery/art-book-1.jpg" alt=""></a>
+            <h5><a href="#">Gilead- A Novel<br>by Marilynne Robinson</a><h5>
+          </div>
+          <div class="item">
+            <a href="#"><img src="../images/gallery/art1.jpg" alt=""></a>
+            <h5><a href="#">Gilead- A Novel<br>by Marilynne Robinson</a><h5>
+          </div>
+          <div class="item">
+            <a href="#"><img src="../images/gallery/bookg.jpg" alt=""></a>
+            <h5><a href="#">Gilead- A Novel<br>by Marilynne Robinson</a><h5>
+          </div>
+          <div class="item">
+            <a href="#"><img src="../images/gallery/booke.jpg" alt=""></a>
+            <h5><a href="#">Gilead- A Novel<br>by Marilynne Robinson</a><h5>
+          </div>
+          <div class="item">
+            <a href="#"><img src="../images/gallery/bookl.jpg" alt=""></a>
+            <h5><a href="#">Gilead- A Novel<br>by Marilynne Robinson</a><h5>
+          </div>
+          <div class="item">
+            <a href="#"><img src="../images/gallery/bookd.jpg" alt=""></a>
+            <h5><a href="#">Gilead- A Novel<br>by Marilynne Robinson</a><h5>
+          </div>
+          <div class="item">
+            <a href="#"><img src="../images/gallery/booka.jpg" alt=""></a>
+            <h5><a href="#">Gilead- A Novel<br>by Marilynne Robinson</a><h5>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</div>
 <!-- ################################################################################################ -->
 
 <!-- FOOTER -->
@@ -136,7 +182,7 @@
 			 <div class="col-xs-6 col-sm-4 col-md-4">
 				 <ul class="list-unstyled quick-links" >
 					 <li><a href="../menu.html">Home</a></li>
-					 <li><a href="about1.html">About us</a></li>
+					 <li><a href="about2.html">About us</a></li>
 					 <li><a href="contact.html">Get help</a></li>
 					 <li><a href="faqs.html">FAQs</a></li>
 					 <li><a href="contact.html">Contact us</a></li>
@@ -168,7 +214,29 @@
  </footer>
 	<!-- ./Footer -->
 
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
 
+          600: {
+            items: 3
+          },
+
+          1000: {
+            items: 5
+          }
+        }
+      })
+    })
+  </script>
 
 </body>
 </html>

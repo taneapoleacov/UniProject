@@ -7,14 +7,13 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background: url(../../images/gallery/black.jpg) no-repeat;
 	background-size:cover;
-position: relative;
+  position: relative;
   width: 85%;
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
-
-
 }
+
 .login-box{
 	width:280px;
 	position: absolute;
@@ -26,7 +25,7 @@ position: relative;
 .login-box h1{
 	float:left;
 	font-size:40px;
-	border-bottom: 6px solid #4caf50;
+	border-bottom: 6px solid #ff6f61 ;
 	margin-bottom: 50px;
 	padding: 13px 0
 }
@@ -36,7 +35,7 @@ position: relative;
 	font-size:20px;
 	padding: 8px 0;
 	margin: 8px 0;
-	border-bottom: 1px solid #4caf50;
+	border-bottom: 1px solid #ff6f61 ;
 }
 .textbox i{
 	width: 26px;
@@ -53,12 +52,11 @@ position: relative;
      width: 80%;
      float:left;
      margin:0 10px;
-
 }
 .btn{
 	width:100%;
 	background: none;
-	border: 2px solid #4caf50;
+	border: 2px solid #ff6f61 ;
 	color: white;
 	padding: 5px;
 	font-size: 18px ;
@@ -66,9 +64,11 @@ position: relative;
 	margin: 12px 0;
 }
 
+
 p{
 	display: inline;
 }
+
 a:-webkit-any-link {
     cursor: pointer;
 		color: white;
@@ -78,6 +78,7 @@ a:hover{
 	text-decoration: underline;
 	font-weight: bolder;
 }
+
 @media screen and (max-width: 300px) {
   .login-box {
     display: block;
@@ -87,6 +88,7 @@ a:hover{
     width: 100%;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
 	.login-box{
@@ -104,7 +106,7 @@ a:hover{
 		font-size:20px;
 		padding: 10px 0;
 		margin: 15px 0;
-		border-bottom: 1px solid #4caf50 ;
+		border-bottom: 1px solid #ff6f61 ;
 	}
 
 	.textbox input{
@@ -121,4 +123,7 @@ a:hover{
 	p{
 		font-size: 20px
 	}
+
+
+
 }
