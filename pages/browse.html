@@ -2,658 +2,778 @@
 <html lang="en">
 
 <head>
-<title>Browse</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../layout/styles/stty.css" media="all">
-<link rel="icon" type="image/png" href="../images/gallery/newlogo_1.png"sizes="128x128">
+	<title>Browse</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../layout/styles/stty.css" media="all">
+	<link rel="icon" type="image/png" href="../images/gallery/newlogo_1.png" sizes="128x128">
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
 
 </head>
+
 <body id="top">
-
-<div class="bgded overlay" style="background-image:url('../images/backgrounds/photo-1.jpg');">
-<!-- HEADER -->
-<header>
-<div class="wrapper row1">
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topmenu" aria-expanded="false">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-      <a class="navbar-brand" href="../index.html"><img src="../images/gallery/logo.png" style="width:100px; height:50px;"  alt="Technical University" title="UTM"/></a>
+	<div class="bgded overlay" style="background-image:url('../images/backgrounds/photo-1.jpg');">
+		<!-- HEADER -->
+		<header>
+			<div class="wrapper row1">
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#topmenu" aria-expanded="false">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="../index.html"><img src="../images/gallery/logo.png"
+									style="width:100px; height:50px;" alt="Technical University" title="UTM" /></a>
+						</div>
+						<p class="noshow"><a href="#actionbar">Skip navigation</a></p>
+						<div class="collapse navbar-collapse" id="topmenu">
+							<ul class="nav navbar-nav navbar-right menu">
+								<li><a href="../index.html">Home</a></li>
+								<li class=" active"><a href="browse.html" role="button" aria-expanded="false">Browse</a></li>
+								<li><a href="about2.html" role="button" aria-expanded="false">About the Library</a></li>
+								<li><a href="contact.html" role="button" aria-expanded="false">Get Help</a></li>
+								<li><a href="login.html" role="button" aria-expanded="false">Login</a></li>
+								<li><a href="register.html" role="button" aria-expanded="false">Register</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			</div>
-      <p class="noshow"><a href="#actionbar">Skip navigation</a></p>
-			<div class="collapse navbar-collapse" id="topmenu">
+		</header>
+		<!-- End Top Background Image Wrapper -->
+	</div>
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
 
-<ul class="nav navbar-nav navbar-right menu">
+	<div class="wrapper row3">
+		<main class="hoc container clear">
+			<!-- main body -->
+			<!-- ################################################################################################ -->
+			<div class="row">
+				<form class="book-search">
+					<input type="text" name="search" placeholder="Search..">
+				</form>
 
-  <li>
-    <a href="../index.html">Home</a>
-  </li>
+				<div class="col-xs-12 col-sm-4 bs-region-left" style="padding:15px;">
+					<div class="block-region-top-left" style="background-color:#ECECEC">
+						<section class="" style="padding:30px;">
+							<div class="block-content">
+								<form action="" method="get" accept-charset="UTF-8">
+									<div class="">
+										<div class="form-item">
+											<label for="edit-language" style="font-size:21px;">Language</label>
+											<div class="select-wrapper">
+												<select class="form-select form-control" id="edit-language"
+													name="language">
+													<option value="All" selected="selected">- Any -</option>
+													<option value="german">German</option>
+													<option value="english">English</option>
+													<option value="french">French</option>
+													<option value="italian">Italian</option>
+													<option value="latin">Latin</option>
+													<option value="romanian">Romanian</option>
+													<option value="russian">Russian</option>
+												</select>
+											</div>
+										</div>
 
-  <li class=" active">
-    <a href="browse.html"role="button" aria-expanded="false">Browse</a>
-	</li>
+										<div class="form-item">
+											<label for="edit-type" style="font-size:21px;">Type</label>
+											<div class="select-wrapper">
+												<select class="form-select form-control" id="edit-type" name="type">
+													<option value="All" selected="selected">- Any -</option>
+													<option value="text_book">Text book</option>
+													<option value="ebook">E-book</option>
+													<option value="journal">Journal</option>
+													<option value="ejournal">E-Journal</option>
+												</select>
+											</div>
+										</div>
 
-  <li>
-	  <a href="about2.html" role="button" aria-expanded="false">About the Library</a>
-  </li>
+										<fieldset id="edit-field-genre">
+											<legend>
+												<span>Genre</span>
+											</legend>
+											<div>
+												<div>
+													<div>
+														<div class="form-item checkbox">
+															<label for="genre-1">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-1" name="geography"
+																			value="1">
+																	</span>
+																</div>Geography
+															</label>
+														</div>
 
-  <li>
-	  <a href="contact.html" role="button" aria-expanded="false">Get Help</a>
-  </li>
+														<div class="form-item checkbox">
+															<label for="genre-2">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-2" name="mathematics"
+																			value="2">
+																	</span>
+																</div>Mathematics
+															</label>
+														</div>
 
-  <li>
-	  <a href="login.html" role="button" aria-expanded="false">Login</a>
-  </li>
+														<div class="form-item checkbox">
+															<label for="genre-3">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-3" name="special_mathematics"
+																			value="3">
+																	</span>
+																</div>Special Mathematics
+															</label>
+														</div>
 
-	<li>
-	  <a href="register.html" role="button" aria-expanded="false">Register</a>
-  </li>
+														<div class="form-item checkbox">
+															<label for="genre-4">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-4" name="arhitecture"
+																			value="4">
+																	</span>
+																</div>Arhitecture
+															</label>
+														</div>
 
-		</div>
-	</nav>
+														<div class="form-item checkbox">
+															<label for="genre-5">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-5" name="chemistry"
+																			value="5">
+																	</span>
+																</div>Chemistry
+															</label>
+														</div>
 
-</div>
-</header>
-<!-- End Top Background Image Wrapper -->
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+														<div class="form-item checkbox">
+															<label for="genre-6">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-6" name="constructions"
+																			value="6">
+																	</span>
+																</div>Constructions
+															</label>
+														</div>
 
-<div class="wrapper row3">
-  <main class="hoc container clear">
-    <!-- main body -->
-    <!-- ################################################################################################ -->
-		<div class="row">
+														<div class="form-item checkbox">
+															<label for="genre-7">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-7"
+																			name="data_sructure_and_algorithms"
+																			value="7">
+																	</span>
+																</div>Data Sructure and Algorithms
+															</label>
+														</div>
 
-			<form class="book-search">
-	  <input type="text" name="search" placeholder="Search..">
-	   </form>
+														<div class="form-item checkbox">
+															<label for="genre-8">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-8"
+																			name="object_oriented_programing"
+																			value="8">
+																	</span>
+																</div>Object Oriented Programing
+															</label>
+														</div>
 
-		<div class="col-xs-12 col-sm-4 bs-region-left" style="padding:15px;">
-		<div class="block-region-top-left" style="background-color:#ECECEC">
-			<section class="" style="padding:30px;">
-		<div class="block-content">
-		<form action="" method="get"  accept-charset="UTF-8">
-		<div class="">
+														<div class="form-item checkbox">
+															<label for="genre-9">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-9" name="computers_arhitecture"
+																			value="9">
+																	</span>
+																</div>Computers Arhitecture
+															</label>
+														</div>
 
-		<div class="form-item">
-		<label for="edit-language" style="font-size:21px;">Language</label>
-		<div class="select-wrapper">
-			<select  class="form-select form-control" id="edit-language" name="language">
-				<option value="All" selected="selected">- Any -</option>
-				<option value="german">German</option>
-				<option value="english">English</option>
-				<option value="french">French</option>
-				<option value="italian">Italian</option>
-				<option value="latin">Latin</option>
-				<option value="romanian">Romanian</option>
-				<option value="russian">Russian</option>
-			</select></div>
-		</div>
+														<div class="form-item checkbox">
+															<label for="genre-10">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-10" name="cooking"
+																			value="10">
+																	</span>
+																</div>Cooking
+															</label>
+														</div>
 
-		<div class="form-item">
-		<label for="edit-type" style="font-size:21px;">Type</label>
-		<div class="select-wrapper">
-			<select  class="form-select form-control" id="edit-type" name="type">
-				<option value="All" selected="selected">- Any -</option>
-				<option value="text_book">Text book</option>
-				<option value="ebook">E-book</option>
-				<option value="journal">Journal</option>
-				<option value="ejournal">E-Journal</option>
-			</select></div>
-		</div>
+														<div class="form-item checkbox">
+															<label for="genre-11">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-11" name="fashion"
+																			value="11">
+																	</span>
+																</div>Fashion
+															</label>
+														</div>
 
-		<fieldset id="edit-field-genre">
-		<legend>
-		<span>Genre</span>
-		</legend>
-		<div>
-		<div>
-			<div>
-
-		<div class="form-item checkbox">
-		<label for="genre-1" >
-			<div class="checker" >
-				<span>
-					<input  class="form-checkbox" type="checkbox" id="genre-1" name="geography" value="1"></span>
-				</div>Geography</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-2" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-2" name="mathematics" value="2"></span>
-				</div>Mathematics</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-3" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-3" name="special_mathematics" value="3"></span>
-				</div>Special Mathematics</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-4" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-4" name="arhitecture" value="4"></span>
-				</div>Arhitecture</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-5" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-5" name="chemistry" value="5"></span>
-				</div>Chemistry</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-6" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-6" name="constructions" value="6"></span>
-				</div>Constructions</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-7" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-7" name="data_sructure_and_algorithms" value="7"></span>
-				</div>Data Sructure and Algorithms</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-8" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-8" name="object_oriented_programing" value="8"></span>
-				</div>Object Oriented Programing</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-9" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-9" name="computers_arhitecture" value="9"></span>
-				</div>Computers Arhitecture</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-10" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-10" name="cooking" value="10"></span>
-				</div>Cooking</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-11" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-11" name="fashion" value="11"></span>
-				</div>Fashion</label>
-		</div>
-
-		<div class="form-item checkbox">
-		<label for="genre-12" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-12" name="arts" value="12"></span>
-				</div>Arts</label>
-		</div>
+														<div class="form-item checkbox">
+															<label for="genre-12">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-12" name="arts" value="12">
+																	</span>
+																</div>Arts
+															</label>
+														</div>
 
 
-		<div class="form-item checkbox">
-		<label for="genre-13" >
-			<div class="checker">
-				<span>
-					<input class="form-checkbox" type="checkbox" id="genre-13" name="fashion" value="13"></span>
-				</div>Fashion</label>
-		</div>
-		</div>
-		</div>
-		</div>
-		</fieldset>
+														<div class="form-item checkbox">
+															<label for="genre-13">
+																<div class="checker">
+																	<span>
+																		<input class="form-checkbox" type="checkbox"
+																			id="genre-13" name="fashion"
+																			value="13">
+																	</span>
+																</div>Fashion
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</fieldset>
 
-		<input type="hidden" name="sort_by" value="field_downloads">
-		<div class="form-actions form-wrapper" id="edit-actions">
-			<button class="button form-submit btn" type="submit" id="submit-search" value="browse" name="">Browse</button>
-		</div>
-		</div>
-		</form>
-		</div>
+										<input type="hidden" name="sort_by" value="field_downloads">
+										<div class="form-actions form-wrapper" id="edit-actions">
+											<button class="button form-submit btn" type="submit" id="submit-search"
+												value="browse" name="">Browse</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-8">
+					<div>
+						<section class="block main-title">
+							<div class="block-content text-center">
+								Search Results
+							</div>
+						</section>
+
+						<section>
+							<div>
+								<div>
+									<div>
+										<div class="view-content" style="padding:15px;">
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="firstbookpage.html"><img
+																	src="../images/gallery/book1.jpg" width="220"
+																	height="330" alt="Despre revolutie si paradigma"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Despre revolutie si paradigma</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book2.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book3.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book4.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book5.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book6.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book7.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book8.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book9.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book10.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book11.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book12.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book13.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book14.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book15.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book16.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book17.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book18.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book19.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+											<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
+												<article role="article" about="#">
+													<div class="content">
+														<div class="field-cover">
+															<a href="#"><img src="../images/gallery/book20.jpg"
+																	width="220" height="330"
+																	alt="Transporturi si expeditii rutiere"
+																	class="img-responsive"></a>
+														</div>
+														<div class="field-title text-center" style="height: 61.5556px;">
+															<a href="#" hreflang="en">Transporturi si expeditii
+																rutiere</a></div>
+													</div>
+												</article>
+											</div>
+
+										</div>
+
+										<nav class="pager-nav text-center" role="navigation">
+											<h4 class="visually-hidden">Pagination</h4>
+											<ul class="pagination ">
+												<li class="active">
+													<a href="browse.html" title="Current page" class="">
+														<span class="visually-hidden">
+															Current page
+														</span>1</a>
+												</li>
+
+												<li class="pager__item">
+													<a href="#" title="Go to page 2" class="">
+														<span class="visually-hidden">
+															Page
+														</span>2</a>
+												</li>
+
+												<li class="pager__item">
+													<a href="#" title="Go to page 3" class="">
+														<span class="visually-hidden">
+															Page
+														</span>3</a>
+												</li>
+
+												<li class="pager__item">
+													<a href="#" title="Go to page 4" class="hidden-xs">
+														<span class="visually-hidden">
+															Page
+														</span>4</a>
+												</li>
+
+												<li class="pager__item">
+													<a href="#" title="Go to page 5" class="hidden-xs hidden-sm">
+														<span class="visually-hidden">
+															Page
+														</span>5</a>
+												</li>
+
+												<li class="pager__item">
+													<a href="#" title="Go to page 6"
+														class="hidden-xs hidden-sm hidden-md">
+														<span class="visually-hidden">
+															Page
+														</span>6</a>
+												</li>
+
+												<li class="pager__item">
+													<a href="#" title="Go to page 7"
+														class="hidden-xs hidden-sm hidden-md">
+														<span class="visually-hidden">
+															Page
+														</span>7</a>
+												</li>
+
+												<li class="pager__item">
+													<a href="#" title="Go to page 8"
+														class="hidden-xs hidden-sm hidden-md">
+														<span class="visually-hidden">
+															Page
+														</span>8</a>
+												</li>
+
+												<li class="pager__item">
+													<a href="#" title="Go to page 9"
+														class="hidden-xs hidden-sm hidden-md">
+														<span class="visually-hidden">
+															Page
+														</span>9</a>
+												</li>
+
+												<li class="pager__item pager__item--next">
+													<a href="#" title="Go to next page" rel="next">
+														<span class="visually-hidden">Next page</span>
+														<span aria-hidden="true">&gt;</span>
+													</a>
+												</li>
+
+												<li class="pager__item pager__item--last">
+													<a href="#" title="Go to last page" rel="last">
+														<span class="visually-hidden">Last page</span>
+														<span aria-hidden="true">&gt;&gt;</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<!-- ################################################################################################ -->
+			<!-- ################################################################################################ -->
+
+			<!-- ################################################################################################ -->
+			<!-- / main body -->
+			<div class="clear"></div>
+		</main>
+	</div>
+
+
+
+
+	<!-- FOOTER -->
+	<footer>
+		<section id="footer">
+			<div class="container">
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<div class="col-xs-6 col-sm-4 col-md-4">
+						<a href="https://utm.md/en/"><img src="../images/gallery/utm_logo.png" alt="TUM Library"></a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-4">
+						<ul class="list-unstyled quick-links">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="about2.html">About us</a></li>
+							<li><a href="contact.html">Get help</a></li>
+							<li><a href="faqs.html">FAQs</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-4">
+						<h4>Social media</h4>
+						<ul class="list-unstyled list-inline social">
+							<li class="list-inline-item"><a href="https://www.facebook.com/BiblTehnStUTM/"><i
+										class="fab fa-facebook-f"></i></a></li>
+							<li class="list-inline-item"><a href="mailto:powerpuff.random@gmail.com"><i
+										class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+
+						</ul>
+					</div>
+					</hr>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+						<p class="h6">&copy2019 TUM Library - All rights Reversed. </a></p>
+					</div>
+					</hr>
+				</div>
+			</div>
 		</section>
-		</div>
-		</div>
-		<div class="col-xs-12 col-sm-8">
-		<div>
+	</footer>
+	<!-- END FOOTER -->
 
-			<section class="block main-title">
-		<div class="block-content text-center">
-		Search Results
-		</div>
-		</section>
+	<!-- ################################################################################################ -->
 
-		<section>
-		<div>
-			<div>
-				<div>
+	<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+	<!-- JAVASCRIPTS -->
+	<script src="../layout/scripts/jquery.backtotop.js"></script>
 
-		<div class="view-content" style="padding:15px;">
+	<!-- ################################################################################################ -->
+	<!-- ################################################################################################ -->
 
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="firstbookpage.html"><img src="../images/gallery/book1.jpg" width="220" height="330" alt="Despre revolutie si paradigma" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Despre revolutie si paradigma</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book2.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book3.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book4.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book5.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book6.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book7.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book8.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-		</div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book9.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book10.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book11.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book12.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book13.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book14.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book15.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book16.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book17.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-		</div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book18.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-		</div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book19.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		<div class="col-xs-6  col-sm-4 col-md-4 col-lg-3">
-			<article role="article" about="#">
-				<div class="content">
-		<div class="field-cover">
-			<a href="#"><img src="../images/gallery/book20.jpg" width="220" height="330" alt="Transporturi si expeditii rutiere" class="img-responsive"></a>
-		</div>
-		<div class="field-title text-center" style="height: 61.5556px;">
-			<a href="#" hreflang="en">Transporturi si expeditii rutiere</a></div>
-		</div>
-		</article>
-	  </div>
-
-		</div>
-
-		<nav class="pager-nav text-center" role="navigation" >
-		<h4 class="visually-hidden">Pagination</h4>
-		<ul class="pagination ">
-		<li class="active">
-		<a href="browse.html" title="Current page" class="">
-		<span class="visually-hidden">
-		Current page
-		</span>1</a>
-		</li>
-
-		<li class="pager__item">
-		<a href="#" title="Go to page 2" class="">
-		<span class="visually-hidden">
-		Page
-		</span>2</a>
-		</li>
-
-		<li class="pager__item">
-		<a href="#" title="Go to page 3" class="">
-		<span class="visually-hidden">
-		Page
-		</span>3</a>
-		</li>
-
-		<li class="pager__item">
-		<a href="#" title="Go to page 4" class="hidden-xs">
-		<span class="visually-hidden">
-		Page
-		</span>4</a>
-		</li>
-
-		<li class="pager__item">
-		<a href="#" title="Go to page 5" class="hidden-xs hidden-sm">
-		<span class="visually-hidden">
-		Page
-		</span>5</a>
-		</li>
-
-		<li class="pager__item">
-		<a href="#" title="Go to page 6" class="hidden-xs hidden-sm hidden-md">
-		<span class="visually-hidden">
-		Page
-		</span>6</a>
-		</li>
-
-		<li class="pager__item">
-		<a href="#" title="Go to page 7" class="hidden-xs hidden-sm hidden-md">
-		<span class="visually-hidden">
-		Page
-		</span>7</a>
-		</li>
-
-		<li class="pager__item">
-		<a href="#" title="Go to page 8" class="hidden-xs hidden-sm hidden-md">
-		<span class="visually-hidden">
-		Page
-		</span>8</a>
-		</li>
-
-		<li class="pager__item">
-		<a href="#" title="Go to page 9" class="hidden-xs hidden-sm hidden-md">
-		<span class="visually-hidden">
-		Page
-		</span>9</a>
-		</li>
-
-		<li class="pager__item pager__item--next">
-		<a href="#" title="Go to next page" rel="next">
-		<span class="visually-hidden">Next page</span>
-		<span aria-hidden="true">&gt;</span>
-		</a>
-		</li>
-
-		<li class="pager__item pager__item--last">
-		<a href="#" title="Go to last page" rel="last">
-		<span class="visually-hidden">Last page</span>
-		<span aria-hidden="true">&gt;&gt;</span>
-		</a>
-		</li>
-		</ul>
-		</nav>
-		</div>
-		</div>
-		</div>
-		</section>
-		</div>
-		</div>
-		</div>
-    <!-- ################################################################################################ -->
-    <!-- ################################################################################################ -->
-
-    <!-- ################################################################################################ -->
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
-</div>
-
-
-
-
-<!-- FOOTER -->
-<footer>
- <section id="footer">
-	 <div class="container">
-		 <div class="row text-center text-xs-center text-sm-left text-md-left">
-			 <div class="col-xs-6 col-sm-4 col-md-4">
-				 <a href="https://utm.md/en/"><img src="../images/gallery/utm_logo.png" alt="TUM Library"></a>
-			 </div>
-			 <div class="col-xs-6 col-sm-4 col-md-4">
-				 <ul class="list-unstyled quick-links" >
-					 <li><a href="../index.html">Home</a></li>
-					 <li><a href="about2.html">About us</a></li>
-					 <li><a href="contact.html">Get help</a></li>
-					 <li><a href="faqs.html">FAQs</a></li>
-					 <li><a href="contact.html">Contact us</a></li>
-				 </ul>
-			 </div>
-			 <div class="col-xs-6 col-sm-4 col-md-4" >
-				 <h4>Social media</h4>
-				 <ul class="list-unstyled list-inline social">
-					 <li class="list-inline-item"><a href="https://www.facebook.com/BiblTehnStUTM/"><i class="fab fa-facebook-f"></i></a></li>
-					 <li class="list-inline-item"><a href="mailto:powerpuff.random@gmail.com"><i class="fa fa-envelope"></i></a></li>
-				 </ul>
-			 </div>
-		 </div>
-		 <div class="row">
-			 <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-
-				 </ul>
-			 </div>
-			 </hr>
-		 </div>
-		 <div class="row">
-			 <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-				 <p class="h6">&copy2019 TUM Library - All rights Reversed. </a></p>
-			 </div>
-			 </hr>
-		 </div>
-	 </div>
- </section>
- </footer>
-<!-- END FOOTER -->
-
-<!-- ################################################################################################ -->
-
-<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
-<script src="../layout/scripts/jquery.backtotop.js"></script>
-
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
-<!-- JAVASCRIPTS -->
+	<!-- JAVASCRIPTS -->
 
 </body>
+
 </html>
